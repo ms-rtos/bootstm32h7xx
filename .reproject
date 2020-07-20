@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<MSRTOSSetting>
+<BaseSetting Profile="standard" ProjectType="MSRTOSBspProject" RealEvoVer="0.9.7"/>
+<OutputSetting/>
+<BuildSetting CoustomCfgMakefile="false" NeedReBuild="false" NotScanSourceFile="true"/>
+<BspSetting TemplatePath="/bsp/arm/arm-msrtos-bsp"/>
+</MSRTOSSetting>
