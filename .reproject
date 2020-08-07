@@ -2,6 +2,6 @@
 <MSRTOSSetting>
 <BaseSetting Profile="standard" ProjectType="MSRTOSBspProject" RealEvoVer="0.9.7"/>
 <OutputSetting/>
-<BuildSetting CoustomCfgMakefile="false" NeedReBuild="false" NotScanSourceFile="true"/>
+<BuildSetting CoustomCfgMakefile="false" NeedReBuild="true" NotScanSourceFile="true"/>
 <BspSetting TemplatePath="/bsp/arm/arm-msrtos-bsp"/>
 </MSRTOSSetting>
