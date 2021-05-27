@@ -166,7 +166,7 @@ src/Src/stm32h7xx_it.c \
 src/Src/iot_pi_pro_sd.c \
 src/Src/qspi_w25qxx/bsp_qspi_w25qxx.c \
 src/Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx.c \
-src/Src/startup_stm32h750xx.s
+src/Src/startup_stm32h750xx.S
 
 #*********************************************************************************************************
 # Header file search path (eg. LOCAL_INC_PATH := -I"Your header files search path")
