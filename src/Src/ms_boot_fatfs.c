@@ -268,7 +268,7 @@ static void __ms_shell_fatfs_ls(int argc, char *argv[], const ms_shell_io_t *io)
             fresult = f_readdir(&dir, &finfo);
             if (fresult == FR_OK) {
                 if (finfo.fname[0] != '\0') {
-                    io->_printf("%s\n", finfo.fname);
+                    ms_shell_printf(io, "%s\n", finfo.fname);
                 } else {
                     break;
                 }

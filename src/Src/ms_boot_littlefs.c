@@ -229,7 +229,7 @@ static void __ms_shell_littlefs_ls(int argc, char *argv[], const ms_shell_io_t *
         while (MS_TRUE) {
             ret = lfs_dir_read(ms_lfs_partition, &dir, &linfo);
             if (ret > 0) {
-                io->_printf("%s\n", linfo.name);
+                ms_shell_printf(io, "%s\n", linfo.name);
             } else {
                 break;
             }

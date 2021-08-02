@@ -60,7 +60,7 @@ void _init(void)
 void ms_bsp_printk(const char *buf, ms_size_t len)
 {
 #if MS_CFG_BOOT_TRACE_EN > 0
-    ms_trace_write(buf, len);
+    ms_trace_write(MS_NULL, buf, len);
 #endif
 }
 
@@ -644,12 +644,7 @@ int main(void)
      * Enter shell
      */
 #if MS_CFG_BOOT_SHELL_EN > 0
-    extern unsigned long __ms_shell_cmd_start__;
-    extern unsigned long __ms_shell_cmd_end__;
-
     ms_shell_io_t bsp_shell_io = {
-            (ms_shell_cmd_t *)&__ms_shell_cmd_start__,
-            (ms_shell_cmd_t *)&__ms_shell_cmd_end__ - (ms_shell_cmd_t *)&__ms_shell_cmd_start__,
             ms_trace_getc,
             ms_trace_putc,
             ms_trace_write,
